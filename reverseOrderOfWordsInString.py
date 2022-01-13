@@ -17,7 +17,7 @@ def reverseOrderOfWordsInString(stringToReverse = defaultArgument):
     reversedString = " ".join(stringToReverse.split()[::-1])
     if hasPunctuationAtEnd:
         reversedString += punctuationAtEnd
-    print(reversedString)
+    return reversedString
 
 if argv[0] == "reverseOrderOfWordsInString.py":
-    reverseOrderOfWordsInString()
+    print('Reversed the order of words in string from "{original}" to "{reversed}"'.format(original = stringToReverse, reversed = reverseOrderOfWordsInString()))
