@@ -7,8 +7,8 @@ except IndexError:
 
 def reverseString(stringToReverse = defaultArgument):
     reversedString = stringToReverse[::-1]
-    print("Reversed string from {original} to {reversed}".format(original = stringToReverse, reversed = reversedString))
+    print('Reversed string from "{original}" to "{reversed}"'.format(original = stringToReverse, reversed = reversedString))
     return reversedString
 
-
-reverseString()
+if argv[0] == "reverseString.py":
+    reverseString()
