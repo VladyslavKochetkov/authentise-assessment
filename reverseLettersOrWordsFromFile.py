@@ -9,8 +9,15 @@ helpString = """Usage: python3 reverseLettersOrWordsFromFile.py 'input.txt' -(r|
 
 flag, stringOrFile = itemgetter("flag", "stringOrFile")(getCommandLineInputs(helpString))
 
-fileStream = open(stringOrFile, "r")
-fileText = fileStream.read()
-fileStream.close()
-
+try:
+    fileStream = open(stringOrFile, "r")
+    fileText = fileStream.read()
+    fileStream.close()
+except FileNotFoundError:
+    print("File entered doesn't exist.")
+    exit(-1)
+except:
+    print("General error reading file.")
+    exit(-1)
+    
 print(reverseString(fileText) if flag == "-r" else reverseOrderOfWordsInString(fileText))
