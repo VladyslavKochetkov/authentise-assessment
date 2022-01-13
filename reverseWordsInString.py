@@ -17,7 +17,8 @@ def reverseWordsInString(stringToReverse = defaultArgument):
     reversedString = " ".join(list(map(reverseString, stringToReverse.split())))
     if hasPunctuationAtEnd:
         reversedString += punctuationAtEnd
-    print(reversedString)
+    return reversedString
 
 if argv[0] == "reverseWordsInString.py":
+    print('Reversed each word in the string from "{original}" to "{reversed}"'.format(original = defaultArgument, reversed = reverseWordsInString()))
     reverseWordsInString()
