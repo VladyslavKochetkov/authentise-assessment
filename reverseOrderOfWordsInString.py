@@ -8,7 +8,7 @@ except IndexError:
     defaultArgument = "Demo string to reverse."
 
 noneWordMatch = re.compile("\W")
-def reverseWordsInString(stringToReverse = defaultArgument):
+def reverseOrderOfWordsInString(stringToReverse = defaultArgument):
     hasPunctuationAtEnd = noneWordMatch.match(stringToReverse[-1]) is not None
     if hasPunctuationAtEnd:
         punctuationAtEnd = stringToReverse[-1]
@@ -20,4 +20,4 @@ def reverseWordsInString(stringToReverse = defaultArgument):
     print(reversedString)
 
 if argv[0] == "reverseOrderOfWordsInString.py":
-    reverseWordsInString()
+    reverseOrderOfWordsInString()
