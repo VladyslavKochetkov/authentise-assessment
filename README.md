@@ -182,3 +182,22 @@ _Reversing order of words_
 > `file demo a is this Hello.`
 >
 > `---END REVERSED---`
+
+### Part Five (Extra)
+
+You can also use all of these using a command where you are asked your intents.
+
+#### Example
+
+By running `python3 usingUserInput.py` you will be asked to enter all of the possible variables of inputs and string manipulation.
+
+```
+This is an bonus part of the assignment, where the user can enter all their choices using the command line.
+Do you want to enter a string or read from a file? Enter "file" or "input".
+> Enter: file
+Please enter the file you want to modify.
+> Enter: inputfile.txt
+What action do you want to perform? Enter "r" to reverse the string, "w" to reverse the order of words in the string, or "rw" to reverse the words in the string.
+> Enter: rw
+Reversed the words in the string from "Hello this is a demo file." to "olleH siht si a omed elif."
+```
