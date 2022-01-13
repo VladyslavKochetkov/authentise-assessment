@@ -19,5 +19,9 @@ except FileNotFoundError:
 except:
     print("General error reading file.")
     exit(-1)
-    
-print(reverseString(fileText) if flag == "-r" else reverseOrderOfWordsInString(fileText))
+
+print('Reversed the file using the {reverseString} from \n---ORIGINAL---\n{original}\n---END ORIGINAL---\nto\n---REVERSED---\n{reversed}\n---END REVERSED---'.format(
+    reverseString = "order of the string" if flag == "-r" else "order of the words in the string",
+    original = fileText,
+    reversed = reverseString(fileText) if flag == "-r" else reverseOrderOfWordsInString(fileText) 
+))
