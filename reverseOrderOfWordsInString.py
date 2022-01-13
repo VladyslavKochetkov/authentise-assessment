@@ -20,4 +20,4 @@ def reverseOrderOfWordsInString(stringToReverse = defaultArgument):
     return reversedString
 
 if argv[0] == "reverseOrderOfWordsInString.py":
-    print('Reversed the order of words in string from "{original}" to "{reversed}"'.format(original = stringToReverse, reversed = reverseOrderOfWordsInString()))
+    print('Reversed the order of words in string from "{original}" to "{reversed}"'.format(original = defaultArgument, reversed = reverseOrderOfWordsInString()))

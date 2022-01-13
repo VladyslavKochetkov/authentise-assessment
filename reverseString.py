@@ -10,4 +10,4 @@ def reverseString(stringToReverse = defaultArgument):
     return reversedString
 
 if argv[0] == "reverseString.py":
-    print('Reversed string from "{original}" to "{reversed}"'.format(original = stringToReverse, reversed = reverseString()))
+    print('Reversed string from "{original}" to "{reversed}"'.format(original = defaultArgument, reversed = reverseString()))
